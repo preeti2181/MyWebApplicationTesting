@@ -1,0 +1,10 @@
+package com.HiddenLinks;
+
+public class Bing_HeaderBlock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

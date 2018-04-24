@@ -1,0 +1,54 @@
+package com.NewToursLogInTest.MyMavenProject;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewToursLogIn
+{
+	
+	FirefoxDriver driver;
+	
+	@BeforeTest
+	public void setUp()
+	{
+		driver = new FirefoxDriver();
+		
+		driver.get("http://newtours.demoaut.com");
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+	}
+	
+	@Test
+	public void LogIN()
+	{
+		driver.findElement(By.name("userName")).sendKeys("tutorial");
+		driver.findElement(By.name("password")).sendKeys("tutorial");
+		driver.findElement(By.name("login")).click();
+		
+		String expected_Title="Find";
+		String actual_Title=driver.getTitle();
+		
+		Reporter.log(actual_Title);
+		
+		Assert.assertTrue(actual_Title.contains(expected_Title),"LogIn Failed -- FAIL");
+		
+		}
+	
+	@AfterTest
+	public void tearDown()
+	{
+		driver.close();
+	}
+	
+	
+	
+}

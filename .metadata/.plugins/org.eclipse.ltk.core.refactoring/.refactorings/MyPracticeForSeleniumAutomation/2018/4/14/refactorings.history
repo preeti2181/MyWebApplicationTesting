@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NewUserRegistartionTestData.xlsx&apos; to &apos;MyCucmberTest/src/ExcelInputFile&apos;&#x0D;&#x0A;- Original project: &apos;MyPracticeForSeleniumAutomation&apos;&#x0D;&#x0A;- Destination element: &apos;MyCucmberTest/src/ExcelInputFile&apos;&#x0D;&#x0A;- Original element: &apos;NewUserRegistartionTestData.xlsx&apos;" description="Copy file" destination="=MyCucmberTest/src&lt;ExcelInputFile" element1="src/com/ExcelTestDataFiles/NewUserRegistartionTestData.xlsx" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1522737871710" units="0" version="1.0"/>
+</session>

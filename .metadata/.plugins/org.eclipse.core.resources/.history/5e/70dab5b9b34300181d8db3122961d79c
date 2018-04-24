@@ -1,0 +1,10 @@
+package com.FileUpload;
+
+public class ImageUpload {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+<suite name = "BrowserAutomation Testing" parallel="tests">
+	<test name="on firefox">
+		<classes>
+			<class name = "com.BrowserAutomation.FirefoxBrowserAutomation"/>		
+		</classes>	
+	</test>
+	
+		<test name="on chrome">
+		<classes>
+			<class name = "com.BrowserAutomation.ChromeBrowserAutomation"/>		
+		</classes>	
+	</test>
+
+</suite>
